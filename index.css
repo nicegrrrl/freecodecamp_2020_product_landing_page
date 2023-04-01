@@ -1,0 +1,558 @@
+body {
+    margin: 0;
+    font-family: "Muli", sans-serif;
+    font-size: 1.2rem;
+    color: #505050;
+    background-color: #f7f8f8;
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .img-main {
+    width: 100%;
+  }
+  
+  #header-img {
+    max-width: 250px;
+    min-height: 20px;
+  }
+  
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 1px;
+    padding: 20px 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    background-color: #fff;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .navlink {
+    font-size: 1.3rem;
+  }
+  
+  .nav-ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-ul li {
+    margin: 0 1rem;
+  }
+  
+  .container {
+    margin: 0 30px 60px 30px;
+  }
+  
+  #how-it-works {
+    display: block;
+    padding-bottom: 90px;
+    margin-top: 3rem;
+  }
+  
+  .how-it-works-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .how-it-works-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 125px;
+  }
+  
+  .how-it-works-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50vw;
+    height: 125px;
+    padding: 5px;
+    text-align: left;
+  }
+  
+  .how-it-works-description h5 {
+    padding: 1rem 0 0.5rem 0;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  
+  .how-it-works-description p {
+    padding: 1rem 0 0.5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  #plans,
+  #contact,
+  #about {
+    display: block;
+    padding-bottom: 60px;
+    margin-top: -60px;
+  }
+  
+  .plans {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+  
+  .plan {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 20rem;
+    padding: 1rem;
+    margin: 0.5rem auto;
+    text-align: center;
+  }
+  
+  .plan h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+  }
+  
+  .plan h2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.1rem;
+    margin: 0;
+    font-size: 3.4rem;
+    font-weight: 400;
+    color: #be7560;
+  }
+  
+  .plan p {
+    padding-bottom: 2rem;
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  
+  .plan ul {
+    padding: 0 0 1rem 0;
+    margin: 0;
+    font-size: 0.87rem;
+    font-weight: 500;
+  }
+  
+  .plan li {
+    margin: 0.3rem 0;
+  }
+  
+  .plans button {
+    padding: 0.5rem 3rem;
+    margin: 0 auto;
+    font-family: "Muli", sans-serif;
+    font-weight: 500;
+    color: #8a614c;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #dad2cc;
+    transition: all 0.5s ease;
+  }
+  
+  .plans button:hover {
+    font-weight: 800;
+    color: #8a614c;
+    background-color: #dad2cc;
+    border: 2px solid #dad2cc;
+  }
+  
+  .contact {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .field {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 40vw;
+    padding-bottom: 25px;
+    margin: 0 auto;
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0.8;
+  }
+  
+  .input {
+    height: 3.5rem;
+    font-family: "Muli", sans-serif;
+    color: #b5938c;
+    border: 2px solid #dad2cc;
+  }
+  
+  .contact input[type="text"],
+  .contact input[type="email"] {
+    padding: 0 1rem;
+    font-size: 1.6rem;
+  }
+  
+  ::placeholder {
+    padding: 5px;
+    margin: 3px;
+    font-size: 1.6rem;
+    color: #dad2cc;
+  }
+  
+  .contact textarea {
+    min-height: 7.5rem;
+    padding: 0.5rem 1rem;
+    font-family: "Muli", sans-serif;
+    font-size: 1.6rem;
+    color: #b5938c;
+    resize: vertical;
+    border: 2px solid #dad2cc;
+  }
+  
+  .contact-button {
+    height: 3rem;
+    padding: 0.5rem 2rem;
+    font-family: "Muli", sans-serif;
+    font-weight: 500;
+    color: #8a614c;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #dad2cc;
+    transition: all 0.5s ease;
+  }
+  
+  .contact-button:hover {
+    font-weight: 800;
+    color: #8a614c;
+    background-color: #dad2cc;
+    border: 2px solid #dad2cc;
+  }
+  
+  .contact-button:focus {
+    background-color: yellow;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0.8;
+  }
+  
+  .about {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-content {
+    max-width: 30rem;
+  }
+  
+  .about figcaption {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  
+  .about-content-quote {
+    text-align: center;
+  }
+  
+  .about-content-quote-welove {
+    font-size: 1.5rem;
+  }
+  
+  .about-content-quote-lorelai {
+    font-size: 0.8rem;
+  }
+  
+  .footer {
+    width: 100%;
+    height: auto;
+    padding-top: 90px;
+    padding-bottom: 120px;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #e9e9e9;
+    text-shadow: 0 1px 1px #fff;
+    background-color: #272727;
+  }
+  
+  .footer-logo {
+    width: 12rem;
+    padding: 0;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+  }
+  
+  .footer-columns {
+    display: flex;
+    flex-flow: row;
+  }
+  
+  .footer-middle {
+    margin: 0 6rem 0 5rem;
+  }
+  
+  .footer-middle h4,
+  .footer-right h4 {
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .footer-middle p,
+  .footer-right p {
+    padding: 0;
+    font-size: 0.75rem;
+    font-weight: 200;
+  }
+  
+  .footer-copyright {
+    margin-left: 2rem;
+  }
+  
+  .footer-copyright-bottom {
+    padding: 0;
+    font-size: 0.75rem;
+    font-weight: 200;
+  }
+  
+  a:link,
+  a:visited {
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    font-weight: 500;
+    color: #be7560;
+  }
+  
+  @media (max-width: 768px) {
+    #header {
+      justify-content: flex-start;
+      font-size: 0.4rem;
+    }
+  
+    #header li {
+      margin: 0;
+      margin-top: 0.8rem;
+      margin-left: 0.98rem;
+      font-size: 0.8rem;
+    }
+  
+    .container {
+      margin-top: 20px;
+    }
+  
+    .how-it-works {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+  
+    .how-it-works-container {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      margin: 0 auto;
+    }
+  
+    .how-it-works-icons {
+      height: 50px;
+      padding: 0 0 0.2rem 0;
+    }
+  
+    .how-it-works-description {
+      align-items: center;
+      width: 70vw;
+      height: 120px;
+    }
+  
+    .how-it-works-description h5 {
+      padding: 0 0 0.5rem 0;
+      font-size: 0.8rem;
+    }
+  
+    .how-it-works-description p {
+      padding: 0.5rem 0 0.5rem 0;
+      font-size: 0.87rem;
+    }
+  
+    .plan {
+      flex-flow: row nowrap;
+      width: 9rem;
+      margin: 0.4rem auto 0 auto;
+    }
+  
+    .plan-title-price {
+      flex: 0 0 auto;
+      margin-right: 3rem;
+    }
+  
+    .plan h1 {
+      font-size: 0.8rem;
+    }
+  
+    .plan h2 {
+      padding-top: 0.3rem;
+      font-size: 2rem;
+    }
+  
+    .plan p {
+      padding-bottom: 1.2rem;
+      margin: 0;
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+  
+    .plan ul {
+      padding: 0 0 0.2rem 0;
+      font-size: 0.87rem;
+    }
+  
+    .plans button {
+      padding: 0.15rem 3rem;
+    }
+  
+    .contact-title {
+      margin-bottom: 0;
+      font-size: 1.5rem;
+    }
+  
+    .field {
+      width: 80vw;
+      padding-bottom: 20px;
+      margin: 0 auto;
+    }
+  
+    .input {
+      height: 1.5rem;
+    }
+  
+    .contact input[type="text"],
+    .contact input[type="email"] {
+      padding: 0.2 1rem;
+      font-size: 1.6rem;
+    }
+  
+    ::placeholder {
+      padding: 5px;
+      margin: 3px;
+      font-size: 1rem;
+      color: #dad2cc;
+    }
+  
+    .contact textarea {
+      min-height: 4.5rem;
+      padding: 0.2rem 0.5rem;
+      font-size: 1rem;
+    }
+  
+    .about-title {
+      margin-bottom: 0;
+      font-size: 1.5rem;
+    }
+  
+    .about-content {
+      font-size: 0.87rem;
+    }
+  
+    .about-content-quote-welove {
+      font-size: 0.95rem;
+    }
+  
+    .about-content-quote-lorelai {
+      font-size: 0.5rem;
+    }
+  
+    .footer {
+      height: auto;
+      padding-top: 50px;
+      padding-bottom: 80px;
+      font-size: 1rem;
+    }
+  
+    .footer-logo {
+      width: 12rem;
+      margin-top: 2.5rem;
+      margin-left: 0.6rem;
+    }
+  
+    .footer-columns {
+      flex-flow: row;
+    }
+  
+    .footer-middle {
+      margin: 0 2rem 0 2rem;
+    }
+  
+    .footer-right {
+      margin: 0 1rem 0 0;
+    }
+  
+    .footer-middle h4,
+    .footer-right h4 {
+      font-size: 0.7rem;
+    }
+  
+    .footer-middle p,
+    .footer-right p {
+      font-size: 0.4rem;
+    }
+  
+    .footer-copyright {
+      margin-left: 2rem;
+      font-size: 0.7rem;
+    }
+  
+    .footer-copyright-bottom {
+      font-size: 0.5rem;
+    }
+  }
+  
